@@ -2,26 +2,25 @@
 <html>
 
     <head>
-        <title>教程</title>
+        <title>教程？</title>
+        <base href="../">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../static/tabicon.ico">
-        <link rel="stylesheet" href="../static/mainstyle.css">
-        <!-- <base href="fuckyou"/> -->
+        <link rel="icon" href="static/tabicon.ico">
+        <link rel="stylesheet" href="static/mainstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
 
     <body>
 
-        <div class="sidenavigation">
-            <h1><a href="../index.html">危Ench</a></h1>
-            <a href="https://space.bilibili.com/128607571/">Bilibili主页</a>
-            <a href="https://shimo.im/sheets/gC3wwdTJd9cKPYJ3/MODOC">石墨文档企划</a>
-            <a href="http://docs.aegisub.org/3.2/ASS_Tags/">Aegisub Tags</a>
-            <p></p>
-            <a href="../guide/index.html">教程</a>
-            <img src="../static/hewwo.png" alt="UwU">
-        </div>
+
+        <div id="sidenavigation"></div>
+        <script>
+            $(function(){
+                $("#sidenavigation").load("static/sidenavigation.html");
+            });
+        </script>
         
         <div class="maincontent">
             <div class="topheading">
@@ -34,7 +33,23 @@
                 </h2>
             </div>
 
-            <img src="../static/fuyukaidesu.jpg" alt="OwO" height=192px width=192px border="4px solid black">
+            <p>
+                Test
+                <!-- 现在高三的我，一边做着我下定了决心要搞懂的初中数学，一边抬头望着我这一整个网站：我究竟在做什么？
+                <br>
+                <br>
+                我的故事很简单：
+                <br>
+                我小的时候语言能力很差。
+                <br>
+                然后我发奋图强，语言能力就逐步变好了。
+                <br>
+                现在，明白不懂他国语言的痛的我，想要靠自己的能力来造福一下世界。 -->
+                <br>
+                <a href="index.html">回到主页 testssssssssssssaasdasdfasdf</a>
+            </p>
+
+            <img src="static/fuyukaidesu.jpg" alt="OwO" height=192px width=192px border="4px solid black">
         </div>
 
 

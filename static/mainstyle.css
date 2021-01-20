@@ -13,11 +13,10 @@ body {
     height: 100%;
     width: 200px;
     position: fixed;
-    z-index: 1; /*stays on top */
+    z-index: 1;
     top: 0;
     left: 0;
     text-align: left;
-    background-color: rgb(240, 240, 240);
     background-color: rgba(240, 240, 240, 0.5);
     border-right: 4px solid black;
 }
@@ -35,11 +34,12 @@ body {
     font-size: 1.4em;
     color: black;
     display: block;
+    transition: background-color 0.2s;
 }
 .sidenavigation a:hover {
     color: #B5393A;
-    background-color: rgb(221, 221, 221);
     background-color: rgba(221, 221, 221, 0.5);
+    transition: 0.4s;
 }
 .sidenavigation a:active {
     color: #9FD0E2;
@@ -51,23 +51,44 @@ body {
     margin: 0;
     padding: 0;
     width: 128px;
+    transition: width 0.5s
+}
+.sidenavigation img:hover {
+    width: 144px;
+    transition: width 0.5s;
 }
 
 
 .maincontent {
-    margin-left:200px;
+    margin-left: 200px;
     padding-left: 24px;
     padding-right: 24px;
 }
 .maincontent p {
-    font-size:1.5em;
+    border: 4px solid black;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 48px;
+    margin-right: 48px;
+    font-size: 1.5em;
+    padding: 32px 48px 32px 48px;
+    max-width: 1280px;
+    text-align: left;
 }
-
-
+.maincontent a {
+    text-decoration: none;
+    color: darkblue;
+}
+.maincontent a:hover {
+    color: #B5393A;
+    background-color: rgba(221, 221, 221, 0.5);
+}
+.maincontent a:active {
+    color: #9FD0E2;
+}
 
 .topheading {
     border: 6px solid black;
-    background-color: white;    
+    background-color: rgba(255, 255, 255, 0.9);    
     text-align: center;
     margin: 32px auto 32px auto;
     max-width: 1536px;
